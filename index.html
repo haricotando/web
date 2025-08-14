@@ -7,6 +7,16 @@
   
   <title>HARICOT COMA</title>
   
+  <base href="/">
+  <script>
+  (function() {
+    var basePath = location.hostname.includes('github') 
+      ? '/web/' 
+      : '/';
+    document.querySelector('base').setAttribute('href', basePath);
+  })();
+  </script>
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-divider@1.1.0/dist/bulma-divider.min.css"/>

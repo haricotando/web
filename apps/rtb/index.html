@@ -7,17 +7,27 @@
   
   <title>RTB - ReturnToBase（⌚️ Apple Watch App）|HARICOT COMA</title>
   
+  <base href="/">
+  <script>
+  (function() {
+    var basePath = location.hostname.includes('github') 
+      ? '/web/' 
+      : '/';
+    document.querySelector('base').setAttribute('href', basePath);
+  })();
+  </script>
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-divider@1.1.0/dist/bulma-divider.min.css"/>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
-  <script src="../../js/jquery.randomTyper.js"></script>
-  <script src="../../js/init.js"></script>
+  <script src="js/jquery.randomTyper.js"></script>
+  <script src="js/init.js"></script>
  
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -51,7 +61,7 @@
         
         <div id="haricotcoma_container">
           <a href="/">
-            <span id="haricotcoma"><img src="../../images/haricotcoma.png" alt="HARICOT COMA"></span>
+            <span id="haricotcoma"><img src="images/haricotcoma.png" alt="HARICOT COMA"></span>
           </a>
         </div>
 
@@ -68,10 +78,10 @@
             
             <div class="columns is-desktop">
               <div class="column">
-                <img src="../../images/rtb_image1.png" alt="Description">
+                <img src="images/rtb_image1.png" alt="Description">
               </div>
               <div class="column">
-                <img src="../../images/rtb_image2.png" alt="Description">
+                <img src="images/rtb_image2.png" alt="Description">
               </div>
             </div>
             <p class="is-size-5"><b>散歩は冒険だ、昨日と違う道を選びたい。</b></p>
@@ -104,10 +114,10 @@
 
             <div class="columns is-desktop">
               <div class="column">
-                <img src="../../images/rtb_image3.png" alt="Description">
+                <img src="images/rtb_image3.png" alt="Description">
               </div>
               <div class="column">
-                <img src="../../images/rtb_image4.png" alt="Description">
+                <img src="images/rtb_image4.png" alt="Description">
               </div>
             </div>
 
